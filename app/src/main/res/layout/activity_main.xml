@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+TODO activity_main.xml
+1. Next and Previous Buttons
+2. Fix layout to handle vertical layout and not just horizontal layout.
+3. Change color schemes to match game feel
+4. Update icons
+5. Add spinner for categorization of runes.
+6. Add search feature, (Maybe a menu bar?)
+-->
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
 
     android:layout_width="match_parent"
@@ -87,7 +96,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="TextView"
+                android:gravity="start"
+                android:text="Reference"
                 android:textAlignment="textStart" />
         </LinearLayout>
 
@@ -108,7 +118,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:textAlignment="textStart" />
+                android:textAlignment="textStart"
+                android:gravity="start"/>
 
             <TextView
                 android:id="@+id/SStext"
@@ -116,7 +127,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="SS Lvl"
-                android:textAlignment="textEnd" />
+                android:textAlignment="textEnd"
+                android:gravity="end"/>
 
             <TextView
                 android:id="@+id/SSreq"
