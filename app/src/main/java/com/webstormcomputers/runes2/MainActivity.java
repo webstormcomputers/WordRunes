@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
 
  }
     public void nextOnclick(View view){
-        while (indexId < runes.length) {
+        if (indexId < runes.length) {
 
         wordruneId.setText(Integer.toString(runes[indexId].IdWordRune));
         Wrname.setText(runes[indexId].WrName);
