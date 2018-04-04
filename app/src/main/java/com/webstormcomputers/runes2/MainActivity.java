@@ -3,8 +3,6 @@ package com.webstormcomputers.runes2;
 TODO
 1. Button handlers to advance and reverse data record
 2. Database connection of some sort to store the hundreds of word runes.
-
-
  */
 
 import android.os.Bundle;
@@ -14,10 +12,6 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import static com.webstormcomputers.runes2.R.id.WrName;
-
-
-
-
 
 public class MainActivity extends AppCompatActivity {
     int indexId = 0;
@@ -40,9 +34,6 @@ public class MainActivity extends AppCompatActivity {
   super.onCreate(savedInstanceState);
   setContentView(R.layout.activity_main);
 
-
-
-
   wordruneId = (TextView)findViewById(R.id.wordruneId);
   Wrname = (TextView) findViewById(WrName);
   Reference = (TextView) findViewById(R.id.reference);
@@ -53,14 +44,10 @@ public class MainActivity extends AppCompatActivity {
   dur = (TextView) findViewById(R.id.Duration);
   chincr = (TextView) findViewById(R.id.ChStIncr);
   ssincr = (TextView) findViewById(R.id.SSIncr);
-  Next = (Button) findViewById(R.id.Next);
-  Previous = (Button) findViewById(R.id.Prev);
-
 
  }
     public void nextOnclick(View view){
         while (indexId < runes.length) {
-
 
         wordruneId.setText(Integer.toString(runes[indexId].IdWordRune));
         Wrname.setText(runes[indexId].WrName);
@@ -75,7 +62,4 @@ public class MainActivity extends AppCompatActivity {
         indexId++;
         }
     }
-
-
-
 }
