@@ -41,7 +41,8 @@ TODO activity_main.xml
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/ButtomLayout"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:paddingBottom="8dp">
 
         <TextView
             android:id="@+id/textView"
@@ -54,7 +55,8 @@ TODO activity_main.xml
             android:id="@+id/wordruneId"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:text="3" />
 
         <TextView
             android:id="@+id/textView2"
@@ -69,7 +71,7 @@ TODO activity_main.xml
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="TextView" />
+            android:text="Father's Desires WordRune" />
 
     </LinearLayout>
 
@@ -78,21 +80,23 @@ TODO activity_main.xml
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/NameAndNumberLayout"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:paddingBottom="10dp">
 
         <TextView
             android:id="@+id/reference"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="referrence"
-            android:textAlignment="center" />
+            android:text="John 8:44a"
+            android:textAlignment="center"
+            android:textSize="16sp" />
     </LinearLayout>
 
     <ScrollView
         android:id="@+id/ScriptureScroll"
         android:layout_width="match_parent"
-        android:layout_height="95dp"
+        android:layout_height="50dp"
         android:layout_below="@+id/ReferenceLayout">
 
         <TextView
@@ -101,7 +105,7 @@ TODO activity_main.xml
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="start"
-            android:text="Scripture"
+            android:text="You belong to your father, the devil, and you want to carry out your father's desire. He was a murderer from the beginning, not holding to the truth, for there is no truth in him."
             android:textAlignment="textStart" />
     </ScrollView>
 
@@ -111,44 +115,49 @@ TODO activity_main.xml
         android:layout_height="wrap_content"
         android:layout_below="@id/ScriptureScroll"
         android:layout_centerHorizontal="true"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:paddingBottom="10dp">
 
         <TextView
             android:id="@+id/referencecopy"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="referrence"
-            android:textAlignment="center" />
+            android:text="John 8:44a"
+            android:textAlignment="center"
+            android:textSize="16sp" />
     </LinearLayout>
 
-    <LinearLayout
+    <RelativeLayout
         android:id="@+id/CharSsReqLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/ReferenceLayout2"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:paddingBottom="10dp">
 
         <TextView
             android:id="@+id/textView9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_alignParentLeft="true"
             android:text="Char St" />
 
         <TextView
             android:id="@+id/CharStr"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/textView9"
             android:layout_weight="1"
             android:gravity="start"
+            android:text="PA4"
             android:textAlignment="textStart" />
 
         <TextView
             android:id="@+id/SStext"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_toLeftOf="@+id/SSreq"
             android:gravity="end"
             android:text="SS Lvl"
             android:textAlignment="textEnd" />
@@ -157,8 +166,9 @@ TODO activity_main.xml
             android:id="@+id/SSreq"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1" />
-    </LinearLayout>
+            android:layout_alignParentRight="true"
+            android:text="3" />
+    </RelativeLayout>
 
     <LinearLayout
         android:id="@+id/EffectLayout"
@@ -167,35 +177,20 @@ TODO activity_main.xml
 
         android:layout_alignParentBottom="false"
         android:layout_below="@+id/CharSsReqLayout"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:paddingBottom="10dp">
 
         <TextView
             android:id="@+id/Effect"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="TextView"
+            android:text="Anyone who can say the Father's Desires WordRune perfectly can reduce the mound orc
+sin enchantment by 2 difficulty levels."
             android:textAlignment="center" />
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/DurationLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
 
-        android:layout_above="@+id/CharSSIncrLayout"
-        android:layout_alignParentBottom="true"
-        android:layout_below="@+id/EffectLayout"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/Duration"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="duration between uses"
-            android:textAlignment="center" />
-    </LinearLayout>
 
     <RelativeLayout
         android:id="@+id/CharSSIncrLayout"
@@ -209,13 +204,27 @@ TODO activity_main.xml
             android:id="@+id/ChStIncr"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true" />
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:text="PA+1mu" />
+
+        <TextView
+            android:id="@+id/Duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:text="May be used only once per day."
+            android:textAlignment="center" />
 
         <TextView
             android:id="@+id/SSIncr"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true" />
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="SS+3mu" />
 
     </RelativeLayout>
 
