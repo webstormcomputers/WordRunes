@@ -14,7 +14,7 @@ import android.widget.TextView;
 import static com.webstormcomputers.runes2.R.id.WrName;
 
 public class MainActivity extends AppCompatActivity {
-    int indexId = 0;
+    int indexId = -1;
     TextView wordruneId;
     TextView Wrname;
     TextView Reference;
@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     TextView dur;
     TextView chincr;
     TextView ssincr;
+    TextView Reference2;
     Button Next;
     Button Previous;
     wordune[] runes = runeslist.create_wordrunes();
@@ -38,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
   Wrname = (TextView) findViewById(WrName);
   Reference = (TextView) findViewById(R.id.reference);
   Script = (TextView) findViewById(R.id.scripture);
+  Reference2 = (TextView) findViewById(R.id.referencecopy);
   chstreq = (TextView) findViewById(R.id.CharStr);
   ssreq = (TextView) findViewById(R.id.SSreq);
   eff = (TextView) findViewById(R.id.Effect);
@@ -46,20 +48,43 @@ public class MainActivity extends AppCompatActivity {
   ssincr = (TextView) findViewById(R.id.SSIncr);
 
  }
+    public void preOnclick(View view) {
+        if (indexId > 0) {
+            indexId--;
+            wordruneId.setText(Integer.toString(runes[indexId].IdWordRune));
+            Wrname.setText(runes[indexId].WrName);
+            Reference.setText(runes[indexId].reference);
+            Script.setText(runes[indexId].scripture);
+            Reference2.setText(runes[indexId].reference);
+            chstreq.setText(runes[indexId].ChStReq);
+            ssreq.setText(runes[indexId].SsReq);
+            eff.setText(runes[indexId].effect);
+            dur.setText(runes[indexId].duration);
+            chincr.setText(runes[indexId].ChStIncr);
+            ssincr.setText(runes[indexId].SsIncr);
+
+        }
+    }
+
     public void nextOnclick(View view){
-        if (indexId < runes.length) {
+        if (indexId < runes.length ) {
+            if (indexId != runes.length -1)
+            {
+                indexId += 1;
+            }
 
         wordruneId.setText(Integer.toString(runes[indexId].IdWordRune));
         Wrname.setText(runes[indexId].WrName);
         Reference.setText(runes[indexId].reference);
         Script.setText(runes[indexId].scripture);
+        Reference2.setText(runes[indexId].reference);
         chstreq.setText(runes[indexId].ChStReq);
         ssreq.setText(runes[indexId].SsReq);
         eff.setText(runes[indexId].effect);
         dur.setText(runes[indexId].duration);
         chincr.setText(runes[indexId].ChStIncr);
         ssincr.setText(runes[indexId].SsIncr);
-        indexId++;
+
         }
     }
 }
