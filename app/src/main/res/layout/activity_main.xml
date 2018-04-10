@@ -8,33 +8,36 @@ TODO activity_main.xml
 5. Add spinner for categorization of runes.
 6. Add search feature, (Maybe a menu bar?)
 -->
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="8dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp">
+
+    <LinearLayout
+        android:id="@+id/ButtomLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="horizontal">
 
-        <LinearLayout
-            android:id="@+id/ButtomLayout"
-            android:layout_width="match_parent"
+        <Button
+            android:id="@+id/Prev"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_weight="1"
+            android:onClick="preOnclick"
+            android:text="Previous" />
 
-            <Button
-                android:id="@+id/Prev"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:onClick="preOnclick"
-                android:text="Previous" />
-
-            <Button
-                android:id="@+id/Next"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:onClick="nextOnclick"
-                android:text="Next" />
-        </LinearLayout>
+        <Button
+            android:id="@+id/Next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="nextOnclick"
+            android:text="Next" />
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/NameAndNumberLayout"
@@ -132,7 +135,8 @@ TODO activity_main.xml
         android:id="@+id/CharSsReqLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/ReferenceLayout2"
+        android:layout_above="@+id/EffectLayout"
+
         android:orientation="horizontal"
         android:paddingBottom="10dp">
 
@@ -174,11 +178,10 @@ TODO activity_main.xml
         android:id="@+id/EffectLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
-        android:layout_alignParentBottom="false"
-        android:layout_below="@+id/CharSsReqLayout"
+        android:layout_above="@+id/CharSSIncrLayout"
+        android:layout_alignParentBottom="true"
         android:orientation="horizontal"
-        android:paddingBottom="10dp">
+        android:paddingBottom="16dp">
 
         <TextView
             android:id="@+id/Effect"
@@ -189,7 +192,6 @@ TODO activity_main.xml
 sin enchantment by 2 difficulty levels."
             android:textAlignment="center" />
     </LinearLayout>
-
 
 
     <RelativeLayout
@@ -228,5 +230,5 @@ sin enchantment by 2 difficulty levels."
 
     </RelativeLayout>
 
-    </RelativeLayout>
+</RelativeLayout>
 

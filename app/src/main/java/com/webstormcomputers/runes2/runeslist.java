@@ -7,7 +7,7 @@ package com.webstormcomputers.runes2;
 public class runeslist {
 
     public static wordune[] create_wordrunes() {
-        wordune[] runelist = new wordune[4];
+        wordune[] runelist = new wordune[7];
 
         runelist[0] = new wordune();
         runelist[0].IdWordRune = 1;
@@ -61,6 +61,43 @@ public class runeslist {
         runelist[3].duration = "May be used once per day";
         runelist[3].ChStIncr = "GE+1mu";
         runelist[3].SsIncr = "SS+1mu";
+
+        runelist[4] = new wordune();
+        runelist[4].IdWordRune = 5;
+        runelist[4].WrName = "Idol Smasher WordRune";
+        runelist[4].scripture = "You shall have no other gods before me.";
+        runelist[4].reference = "Exodus 20:3";
+        runelist[4].ChStReq = "FA 4";
+        runelist[4].SsReq = "DL1";
+        runelist[4].effect ="Anyone who can say the Idol Smasher WordRune perfectly can reduce the golden calf sin enchantment by 2 difficulty levels.";
+        runelist[4].duration = "May be used once per day";
+        runelist[4].ChStIncr = "FA+1mu";
+        runelist[4].SsIncr = "SS+1mu";
+
+        runelist[5] = new wordune();
+        runelist[5].IdWordRune = 6;
+        runelist[5].WrName = "Watch Out WordRune";
+        runelist[5].scripture = "Then he said to them, Watch out! Be on your guard against all kinds of greed; a man's life does not consist in the abundance of his possessions.";
+        runelist[5].reference = "Luke 12:15";
+        runelist[5].ChStReq = "SC 4";
+        runelist[5].SsReq = "DL2";
+        runelist[5].effect ="Anyone who can say the Watch Out WordRune perfectly can reduce the cave troll sin enchantment by 2 difficulty levels.";
+        runelist[5].duration = "May be used once per day";
+        runelist[5].ChStIncr = "SC+1mu";
+        runelist[5].SsIncr = "SS+2mu";
+
+        runelist[6] = new wordune();
+        runelist[6].IdWordRune = 7;
+        runelist[6].WrName = "Humble Lift WordRune";
+        runelist[6].scripture = "Humble yourselves, therefore, under God's mighty hand, that he may lift you up in due time.";
+        runelist[6].reference = "1 Peter 5:6";
+        runelist[6].ChStReq = "GE 4";
+        runelist[6].SsReq = "DL1";
+        runelist[6].effect ="Anyone who can say the Humble Lift WordRune perfectly can reduce the forest troll sin enchantment by 2 difficulty levels.";
+        runelist[6].duration = "May be used once per day";
+        runelist[6].ChStIncr = "GE+1mu";
+        runelist[6].SsIncr = "SS+1mu";
+
 
 
         return runelist;
