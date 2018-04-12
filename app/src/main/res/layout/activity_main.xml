@@ -154,6 +154,7 @@ TODO activity_main.xml
             android:layout_toRightOf="@+id/textView9"
             android:layout_weight="1"
             android:gravity="start"
+            android:paddingLeft="2dp"
             android:text="PA4"
             android:textAlignment="textStart" />
 
@@ -163,6 +164,7 @@ TODO activity_main.xml
             android:layout_height="wrap_content"
             android:layout_toLeftOf="@+id/SSreq"
             android:gravity="end"
+            android:paddingRight="2dp"
             android:text="SS Lvl"
             android:textAlignment="textEnd" />
 
