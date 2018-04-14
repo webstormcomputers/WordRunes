@@ -7,7 +7,7 @@ package com.webstormcomputers.runes2;
 public class runeslist {
 
     public static wordune[] create_wordrunes() {
-        wordune[] runelist = new wordune[10];
+        wordune[] runelist = new wordune[12];
 
         runelist[0] = new wordune();
         runelist[0].IdWordRune = 1;
@@ -131,6 +131,30 @@ public class runeslist {
         runelist[9].duration = "May be used once per day";
         runelist[9].ChStIncr = "FA+1mu";
         runelist[9].SsIncr = "SS+2mu";
+
+        runelist[10] = new wordune();
+        runelist[10].IdWordRune = 11;
+        runelist[10].WrName = "Bitter Brew WordRune";
+        runelist[10].scripture = "Get rid of all bitterness, rage and anger, brawling and slander, along with every form of malice. Be kind and compassionate to one another, forgiving each other, just as in Christ God forgave you.";
+        runelist[10].reference = "Ephesians 4:31-32";
+        runelist[10].ChStReq = "GO 4";
+        runelist[10].SsReq = "DL 2";
+        runelist[10].effect ="Anyone who can say the Father's Will WordRune perfectly can reduce the gall buzzard sin enchantment by 2 difficulty levels.";
+        runelist[10].duration = "May be used once per day";
+        runelist[10].ChStIncr = "GO+1mu";
+        runelist[10].SsIncr = "SS+2mu";
+
+        runelist[11] = new wordune();
+        runelist[11].IdWordRune = 12;
+        runelist[11].WrName = "Love Drive WordRune";
+        runelist[11].scripture = "There is no fear in love. But perfect love drives out fear, because fear has to do with punishment.";
+        runelist[11].reference = "1 John 4:18a";
+        runelist[11].ChStReq = "LO 4";
+        runelist[11].SsReq = "DL 1";
+        runelist[11].effect ="Anyone who can say the Love Drive WordRune perfectly can reduce the giant sin enchantment by 2 difficulty levels.";
+        runelist[11].duration = "May be used once per day";
+        runelist[11].ChStIncr = "LO+1mu";
+        runelist[11].SsIncr = "SS+1mu";
 
         return runelist;
     }
