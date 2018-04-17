@@ -11,6 +11,7 @@ TODO activity_main.xml
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="#ffffe6"
     android:orientation="vertical"
     android:paddingBottom="8dp"
     android:paddingLeft="8dp"
@@ -28,7 +29,7 @@ TODO activity_main.xml
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:onClick="preOnclick"
-            android:text="Previous" />
+            android:text="@string/previous" />
 
         <Button
             android:id="@+id/Next"
@@ -36,7 +37,7 @@ TODO activity_main.xml
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:onClick="nextOnclick"
-            android:text="Next" />
+            android:text="@string/next" />
     </LinearLayout>
 
     <LinearLayout
@@ -52,7 +53,7 @@ TODO activity_main.xml
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Word Rune Number" />
+            android:text="@string/word_rune_number" />
 
         <TextView
             android:id="@+id/wordruneId"
@@ -66,7 +67,7 @@ TODO activity_main.xml
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Name"
+            android:text="@string/name"
             android:visibility="invisible" />
 
         <TextView
@@ -74,7 +75,7 @@ TODO activity_main.xml
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Father's Desires WordRune" />
+            android:text="@string/father_s_desires_wordrune" />
 
     </LinearLayout>
 
@@ -108,7 +109,7 @@ TODO activity_main.xml
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="start"
-            android:text="You belong to your father, the devil, and you want to carry out your father's desire. He was a murderer from the beginning, not holding to the truth, for there is no truth in him."
+            android:text="@string/you_belong_to_your_father_the_devil_and_you_want_to_carry_out_your_father_s_desire_he_was_a_murderer_from_the_beginning_not_holding_to_the_truth_for_there_is_no_truth_in_him"
             android:textAlignment="textStart" />
     </ScrollView>
 
@@ -145,7 +146,7 @@ TODO activity_main.xml
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
-            android:text="Char St" />
+            android:text="@string/char_st" />
 
         <TextView
             android:id="@+id/CharStr"
@@ -155,7 +156,7 @@ TODO activity_main.xml
             android:layout_weight="1"
             android:gravity="start"
             android:paddingLeft="2dp"
-            android:text="PA4"
+            android:text="@string/pa4"
             android:textAlignment="textStart" />
 
         <TextView
@@ -165,7 +166,7 @@ TODO activity_main.xml
             android:layout_toLeftOf="@+id/SSreq"
             android:gravity="end"
             android:paddingRight="2dp"
-            android:text="SS Lvl"
+            android:text="@string/ss_lvl"
             android:textAlignment="textEnd" />
 
         <TextView
@@ -190,8 +191,7 @@ TODO activity_main.xml
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Anyone who can say the Father's Desires WordRune perfectly can reduce the mound orc
-sin enchantment by 2 difficulty levels."
+            android:text="@string/Effect"
             android:textAlignment="center" />
     </LinearLayout>
 
@@ -210,7 +210,7 @@ sin enchantment by 2 difficulty levels."
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_alignParentLeft="true"
-            android:text="PA+1mu" />
+            android:text="@string/pa_1mu" />
 
         <TextView
             android:id="@+id/Duration"
@@ -219,7 +219,7 @@ sin enchantment by 2 difficulty levels."
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:layout_weight="1"
-            android:text="May be used only once per day."
+            android:text="@string/Duration"
             android:textAlignment="center" />
 
         <TextView
@@ -228,7 +228,7 @@ sin enchantment by 2 difficulty levels."
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_alignParentRight="true"
-            android:text="SS+3mu" />
+            android:text="@string/SSMU" />
 
     </RelativeLayout>
 

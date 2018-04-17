@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">Runes2</string>
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+    <string name="word_rune_number">Word Rune Number</string>
+    <string name="name">Name</string>
+    <string name="father_s_desires_wordrune">Father\'s Desires WordRune</string>
+    <string name="john_8_44a">John 8:44a</string>
+    <string name="you_belong_to_your_father_the_devil_and_you_want_to_carry_out_your_father_s_desire_he_was_a_murderer_from_the_beginning_not_holding_to_the_truth_for_there_is_no_truth_in_him">You belong to your father, the devil, and you want to carry out your father\'s desire. He was a murderer from the beginning, not holding to the truth, for there is no truth in him.</string>
+    <string name="char_st">Char St</string>
+    <string name="pa4">PA4</string>
+    <string name="ss_lvl">SS Lvl</string>
+    <string name="Effect">Anyone who can say the Father\'s Desires WordRune perfectly can reduce the mound orc sin enchantment by 2 difficulty levels.</string>
+    <string name="pa_1mu">PA+1mu</string>
+    <string name="Duration">May be used only once per day.</string>
+    <string name="SSMU">SS+3mu</string>
 </resources>
