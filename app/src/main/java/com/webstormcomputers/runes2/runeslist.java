@@ -7,7 +7,7 @@ package com.webstormcomputers.runes2;
 public class runeslist {
 
     public static wordune[] create_wordrunes() {
-        wordune[] runelist = new wordune[12];
+        wordune[] runelist = new wordune[17];
 
         runelist[0] = new wordune();
         runelist[0].IdWordRune = 1;
@@ -152,6 +152,66 @@ public class runeslist {
         runelist[11].ChStReq = "LO 4";
         runelist[11].SsReq = "DL 1";
         runelist[11].effect ="Anyone who can say the Love Drive WordRune perfectly can reduce the giant sin enchantment by 2 difficulty levels.";
+        runelist[11].duration = "May be used once per day";
+        runelist[11].ChStIncr = "LO+1mu";
+        runelist[11].SsIncr = "SS+1mu";
+
+        runelist[11] = new wordune();
+        runelist[11].IdWordRune = 13;
+        runelist[11].WrName = "Stolen Words WordRune";
+        runelist[11].scripture = "Save me, O Lord, from lying lips and from deceitful tongues.";
+        runelist[11].reference = "Psalm 120:2";
+        runelist[11].ChStReq = "GO 4";
+        runelist[11].SsReq = "DL 1";
+        runelist[11].effect ="Anyone who can say the Stolen Words WordRune perfectly can reduce the cave arachnid sin enchantment by 2 difficulty levels.";
+        runelist[11].duration = "May be used once per day";
+        runelist[11].ChStIncr = "GO+1mu";
+        runelist[11].SsIncr = "SS+1mu";
+
+        runelist[11] = new wordune();
+        runelist[11].IdWordRune = 14;
+        runelist[11].WrName = "Worthless Treasures WordRune";
+        runelist[11].scripture = "Ill-gotten treasures are of no value, but righteousness delivers from death.";
+        runelist[11].reference = "Proverbs 10:2";
+        runelist[11].ChStReq = "GO 4";
+        runelist[11].SsReq = "DL 1";
+        runelist[11].effect ="Anyone who can say the Worthless Treasures WordRune perfectly can reduce the greedo sin enchantment by 2 difficulty levels.";
+        runelist[11].duration = "May be used once per day";
+        runelist[11].ChStIncr = "GO+1mu";
+        runelist[11].SsIncr = "SS+1mu";
+
+        runelist[11] = new wordune();
+        runelist[11].IdWordRune = 15;
+        runelist[11].WrName = "Unstable Help WordRune";
+        runelist[11].scripture = ". . . he is a double-minded man, unstable in all he does.";
+        runelist[11].reference = "James 1:8";
+        runelist[11].ChStReq = "GO 4";
+        runelist[11].SsReq = "DL 1";
+        runelist[11].effect ="Anyone who can say the Unstable Help WordRune perfectly can reduce the fluster beast sin enchantment by 2 difficulty levels.";
+        runelist[11].duration = "May be used once per day";
+        runelist[11].ChStIncr = "GO+1mu";
+        runelist[11].SsIncr = "SS+1mu";
+
+        runelist[11] = new wordune();
+        runelist[11].IdWordRune = 16;
+        runelist[11].WrName = "Fool's Pleasure WordRune";
+        runelist[11].scripture = "A fool finds pleasure in evil conduct, but a man of understanding delights in wisdom.";
+        runelist[11].reference = "Proverbs 10:23";
+        runelist[11].ChStReq = "GO 4";
+        runelist[11].SsReq = "DL 1";
+        runelist[11].effect ="Anyone who can say the Fool's Pleasure WordRune perfectly can reduce the wood sprite sin enchantment by 2 difficulty levels.";
+        runelist[11].duration = "May be used once per day";
+        runelist[11].ChStIncr = "GO+1mu";
+        runelist[11].SsIncr = "SS+1mu";
+
+        runelist[11] = new wordune();
+        runelist[11].IdWordRune = 17;
+        runelist[11].WrName = "Love Command WordRune";
+        runelist[11].scripture = "My command is this: Love each other as I have loved you.";
+        runelist[11].reference = "John 15:12";
+        runelist[11].ChStReq = "LO 1";
+        runelist[11].SsReq = "DL 1";
+        runelist[11].effect ="By saying from memory the Love Command WordRune, a LightRaider may add 2 to the Love Character Strength. Lasts for one encounter.";
         runelist[11].duration = "May be used once per day";
         runelist[11].ChStIncr = "LO+1mu";
         runelist[11].SsIncr = "SS+1mu";
